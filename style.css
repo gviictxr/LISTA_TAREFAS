@@ -1,0 +1,119 @@
+/* Cores usadas */
+:root {
+    --cor-fundo: #EEEEEE;
+    --cor-primaria: #3A98B9;
+    --cor-secundaria: #F9FBE7;
+    --cor-texto: #000;
+    --cor-botao-excluir: #D21312;
+    --cor-branco: #ffffff;
+    --cor-hover-primaria: #C9EEFF; /* Cor de destaque ao passar o mouse na primária */
+    --cor-hover-secundaria: #19A7CE; /* Cor de destaque ao passar o mouse na secundária */
+    --cor-hover-botao-excluir: #C82333; /* Cor de destaque ao passar o mouse no botão excluir */
+  }
+  
+/* Estilos do body */
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(to bottom, var(--cor-primaria), var(--cor-fundo));
+    background-attachment: fixed;
+    background-size: cover;
+    color: var(--cor-texto);
+  }
+
+/* Estilos do container */
+
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: var(--cor-branco);
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+/* Estilos do título h1 */
+
+  h1 {
+    text-align: center;
+    color: var(--cor-texto);
+  }
+  
+/* Estilos do input-container */
+
+  .input-container {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+/* Estilos do input de tarefa */
+
+  #task-input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+  }
+  
+/* Estilos do botão adicionar */
+
+  #add-task-btn {
+    padding: 10px 20px;
+    background-color: var(--cor-hover-secundaria);
+    color: var(--cor-branco);
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+  }
+
+/* Estilos do hover do botão adicionar */
+  
+  #add-task-btn:hover {
+    background-color: var(--cor-hover-primaria);
+  }
+
+/* Estilos da lista de tarefas */
+  
+  #task-list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+/* Estilos do item de tarefa */
+  
+  .task-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: var(--cor-secundaria);
+  }
+
+/* Estilos do checkbox da tarefa */
+  
+  .task-item input[type="checkbox"] {
+    margin-right: 10px;
+  }
+
+/* Estilos do texto da tarefa */
+  
+  .task-item .task-text {
+    flex: 1;
+    color: var(--cor-texto);
+  }
+  
+/* Estilos do botão de exclusão */
+
+  .delete-button {
+    padding: 5px 10px;
+    background-color: var(--cor-botao-excluir);
+    color: var(--cor-branco);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
